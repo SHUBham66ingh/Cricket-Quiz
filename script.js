@@ -69,6 +69,7 @@ function showQuestion()
   questionElement.innerHTML = questionNo + ". " + currentQuestion.
   question;
 
+
   currentQuestion.answers.forEach(answers=> {
     const button =  document.createElement("button")
     button.innerHTML = answers.text;
