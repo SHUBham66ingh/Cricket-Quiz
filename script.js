@@ -49,7 +49,7 @@ const questions = [
 ]
 
 const questionElement = documnet.getElementById("question")
-const answerButtons = documnet.getElementById("answer-Buttons")
+const answerButtons = documnet.getElementById("answer-buttons")
 const nextButton = document.getElementById("next-btn")
 
 let currentQuestionIndex=0
@@ -73,6 +73,8 @@ function showQuestion()
     const button =  document.createElement("button")
     button.innerHTML = answers.text;
     button.classList.add("btn")
-    answers.Button.appendChild(button);
+    answerButtons.appendChild(button);
   })
 }
+
+startQuiz()
