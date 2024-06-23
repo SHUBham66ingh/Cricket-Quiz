@@ -20,7 +20,7 @@ const questions = [
     },
     {
         question:"who was the player of the match in 2023 world cup final?",
-        answers : [
+        answers: [
             {text : "jasprit bumrah" , correct : false},
             {text : "travis head" , correct : true},
             {text : "pat cummins" , correct : false},
@@ -49,7 +49,7 @@ const questions = [
 ]
 
 const questionElement = documnet.getElementById("question")
-const answerButtons = documnet.getElementById("answer-buttons")
+const answerButton = documnet.getElementById("answer-buttons")
 const nextButton = document.getElementById("next-btn")
 
 let currentQuestionIndex=0
@@ -70,11 +70,11 @@ function showQuestion()
   question;
 
 
-  currentQuestion.answers.forEach(answers=> {
+  currentQuestion.answers.forEach(answer=> {
     const button =  document.createElement("button")
-    button.innerHTML = answers.text;
+    button.innerHTML = answer.text;
     button.classList.add("btn")
-    answerButtons.appendChild(button);
+    answerButton.appendChild(button);
   })
 }
 
